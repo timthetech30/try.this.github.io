@@ -1,0 +1,94 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url(header.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  font-size: 2rem;
+  
+}
+
+header {
+  text-align: center;
+}
+
+/* i replaced the <section> with <div> and gave it a specific class. 
+I did this to see if I could replace them and the results be the same. Its the same.
+this is the button class */
+.dusty {
+  text-align: center;
+}
+
+
+hr {
+  background-color: #f05f44;
+
+  /* make the line thicker */
+  border-width: .2rem;
+  /* dont want the hr line for the entire page, 
+  only for a certain margin / area */
+  max-width: 20%;
+}
+
+.buffer {
+  height: 8rem;
+  margin: 0 auto;
+}
+
+.btn {
+  font-weight: 600;
+  border-radius: 4rem;
+}
+
+/* we could have added font weight n border radius here but the teacher
+just wanted this done as an example. 
+As he said, since we already have a .btn class made, we can 
+just style it the same way */
+
+.btn-xl {
+  padding: 1rem 2rem;
+
+}
+
+.btn-primary {
+  background-color: #f05f44;
+  border-color: #f05f44;
+  font-size: 18px;
+   
+}
+
+.btn:hover {
+  background-color: #ec3312;
+  border-color: #ec3312;
+  box-shadow: 5px 5px 7px 0px rgba(27, 73, 223, 0.4);
+
+  /* make the button bigger when you hover */
+  border-width: .3rem;
+  transition: all .5s;
+}
+
+/* color change after being clicked */
+.btn:focus {
+  background-color: grey;
+  border-color: white;
+}
+
+
+
+
+
